@@ -1,0 +1,40 @@
+{% load static %}
+
+<section class="main-block">
+  <div class="main-block__container container">
+    <div class="main-block__left">
+      <h1 class="main-block__title main-block__title">Оборудование<br>и расходные материалы<span>для кинотеатров</span></h1>
+      <ul class="main-block__list">
+        <li class="main-block__item">Лампы для проекторов<img class="main-block__list-shield" src="{% static '/images/shield.png' %}"></li>
+        <li class="main-block__item">Фильтры</li>
+        <li class="main-block__item">Отражатели</li>
+        <li class="main-block__item">Мебель для кинотеатров</li>
+        <li class="main-block__item">3D оборудование</li>
+        <li class="main-block__item">Лампы для промышленности</li>
+      </ul><a class="btn btn--long open-modal" href="#form">Заказать запчасть</a>
+    </div>
+    <div class="main-block__right">
+      <h1 class="main-block__title main-block__title--right">для кинотеатров</h1><img class="main-block__img" src="{% static '/images/lamp.png' %}">
+      <div class="main-block__subtitle">
+        <div class="main-block__subtitle-text">Работаем по всей России и странам СНГ<br>Являемся официальным дистрибьютером продукции компании</div><img class="shield main-block__shield" src="{% static '/images/shield.png' %}">
+      </div>
+    </div>
+  </div>
+  <div class="main-block__footer">
+    <div class="container">
+      <div class="main-block__footer-top">
+        <div class="main-block__footer-text"><span>Работаем по всей России и странам СНГ</span><br><span>Являемся официальным дистрибьютером продукции компании</span></div><img class="main-block__footer-shield" src="{% static '/images/shield.png' %}">
+      </div>
+    </div>
+    <div class="main-block__footer-bottom">
+      <div class="container"><a class="btn btn--long open-modal" href="#form">Заказать запчасть</a>
+        <div class="header__contacts header__contacts--footer"><a class="header__phone" href="tel:83432020614">
+            <svg class="icon icon-phone header__phone-ico">
+              <use xlink:href="{% static '/images/svg/symbol/sprite.svg' %}#phone"></use>
+            </svg>
+            +7(343)202-06-14
+            <div class="header__address">Прием звонков с 10:00 до 20:00 по Мск</div></a></div>
+      </div>
+    </div>
+  </div>
+</section>

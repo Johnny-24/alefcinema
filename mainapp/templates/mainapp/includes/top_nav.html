@@ -1,0 +1,11 @@
+<nav class="menu">
+  <ul class="menu__list">
+    {% for menu_item in menu %}
+      <li class="menu__item">
+        <a class="menu__link {% if request.resolver_match.url_name == menu_item.url %}active{% endif %}" href="{% url menu_item.url %}">
+          {{ menu_item.label }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

@@ -1,0 +1,26 @@
+{% load static %}
+
+<header class="header">
+  <div class="header__container container">
+
+    <a class="logo" href="{% url 'home' %}">
+      <svg class="icon icon-logo logo__ico">
+        <use xlink:href="{% static 'images/svg/symbol/sprite.svg' %}#logo"></use>
+      </svg></a><a class="logo__mobile" href="/">
+      <svg class="icon icon-logo-mobile logo__mobile">
+        <use xlink:href="{% static 'images/svg/symbol/sprite.svg' %}#logo-mobile"></use>
+      </svg>
+    </a>
+
+    <!-- menu -->
+    {% include 'mainapp/includes/top_nav.html' %}
+
+    <div class="header__contacts">
+      <a class="header__phone" href="tel:83432020614">+7(343)202-06-14</a>
+      <div class="header__address">Прием звонков с 10:00 до 20:00 по Мск</div>
+    </div>
+    <div class="burger">
+      <div class="burger__line"></div>
+    </div>
+  </div>
+</header>
