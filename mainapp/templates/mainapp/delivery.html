@@ -3,5 +3,22 @@
 {% load static %}
 
 {% block content %}
-  <h1>Delivery</h1>
+  <section class="delivery-section">
+    <div class="container">
+      <div class="delivery-section__description">
+        <p>Для доставки по России мы пользуемся услугами курьерской компании DPD,</p>
+        <p>что позволяет в кратчайшие сроки доставить до дверей Вашего кинотеатра заказанный Вами товар.</p>
+      </div>
+      <div class="delivery-section__list">
+        <ul>
+          <li>Осуществляем доставку по всей России и странам СНГ бесплатно.</li>
+          <li>Весь груз застрахован.</li>
+        </ul>
+      </div>
+      <div class="delivery-section__description">
+        <p class="blue-text">На сайте траспортной компании Вы можете отследить местонахождение</p>
+        <p class="blue-text">груза и предполагаемую дату доставки.</p>
+      </div><a class="btn btn--long btn--white" href="#">Отследить груз</a>
+    </div>
+  </section>
 {% endblock %}

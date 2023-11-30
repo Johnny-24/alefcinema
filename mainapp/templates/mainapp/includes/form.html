@@ -1,0 +1,55 @@
+{% load static %}
+
+<section class="page-application">
+  <div class="container page-application__container">
+    <div class="page-application__info">
+      <div class="page-application__title">Возникли вопросы?</div>
+      <div class="page-application__subtitle">
+        <svg class="icon icon-pencil page-application__ico">
+          <use xlink:href="{% static '/images/svg/symbol/sprite.svg' %}#pencil"></use>
+        </svg>Оставьте свои данные и мы перезвоним вам!
+      </div>
+      <div class="page-application__description">
+        Напишите нам и наши специалисты помогут в подборе
+        оборудования и ответят на все интересующие вопросы
+      </div>
+      <div class="page-application__contacts"><a class="page-application__contact" href="#">
+          <svg class="icon icon-phone page-application__ico-phone">
+            <use xlink:href="{% static '/images/svg/symbol/sprite.svg' %}#phone"></use>
+          </svg>+7(343)202-06-14</a><a class="page-application__contact" href="#">
+          <svg class="icon icon-mail page-application__ico-mail">
+            <use xlink:href="{% static '/images/svg/symbol/sprite.svg' %}#mail"></use>
+          </svg>3786801@gmail.com</a></div>
+    </div>
+    <div class="page-application__form">
+      <div class="form">
+        <div class="form__group">
+          <input class="input" type="text" placeholder="Имя" required>
+          <svg class="icon icon-check input__check">
+            <use xlink:href="{% static '/images/svg/symbol/sprite.svg' %}#check"></use>
+          </svg>
+        </div>
+        <div class="form__group">
+          <input class="input" type="text" placeholder="Телефон или e-mail" required>
+          <svg class="icon icon-check input__check">
+            <use xlink:href="{% static '/images/svg/symbol/sprite.svg' %}#check"></use>
+          </svg>
+        </div>
+        <div class="form__group">
+          <textarea class="textarea" placeholder="Опишите вопрос"></textarea>
+        </div>
+        <div class="form__footer">
+          <button class="btn">Отправить</button>
+          <div class="form__politic">Нажимая на кнопку, вы даете согласие<br>на обработку персональных данных<br>и соглашаетесь с<a class="link" href="#">политикой конфиденциальности</a></div>
+        </div>
+      </div>
+      <div class="page-application__contacts page-application__contacts--mobil"><a class="page-application__contact" href="#">
+          <svg class="icon icon-phone page-application__ico-phone">
+            <use xlink:href="{% static '/images/svg/symbol/sprite.svg' %}#phone"></use>
+          </svg>+7(343)202-06-14</a><a class="page-application__contact" href="#">
+          <svg class="icon icon-mail page-application__ico-mail">
+            <use xlink:href="{% static '/images/svg/symbol/sprite.svg' %}#mail"></use>
+          </svg>3786801@gmail.com</a></div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,21 @@
+{% load static %}
+
+<footer class="footer">
+  <div class="footer__container container">
+    <div class="footer__logo"><a class="logo logo--footer" href="/">
+        <svg class="icon icon-logo ">
+          <use xlink:href="{% static '/images/svg/symbol/sprite.svg' %}#logo"></use>
+        </svg></a></div>
+    <nav class="footer-menu">
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a class="menu__link active" href="catalog.html">Каталог</a></li>
+          <li class="menu__item"><a class="menu__link" href="delivery.html">Доставка</a></li>
+          <li class="menu__item"><a class="menu__link" href="about.html">О компании</a></li>
+          <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </nav>
+    <div class="footer__contacts">г. Екатеринбург,  ул. Монтажников, 26а<br>Все права защищены www.alefcinema.ru</div>
+  </div>
+</footer>

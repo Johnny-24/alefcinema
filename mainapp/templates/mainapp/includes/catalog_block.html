@@ -1,0 +1,28 @@
+{% load static %}
+{% load mainapp_tags %}
+
+<section class="section">
+  <h3 class="section-title">Каталог</h3>
+  <div class="categories container">
+
+    <ul class="categories__list">
+      {% get_categories as categories %}
+      {% for category in categories %}
+        <li class="categories__item">
+          <a class="categories__link" href="catalog-list.html">
+            <span class="categories__header">
+              <h5 class="categories__title">
+                {{ category.name }}
+                {% if category.shield %}
+                  <img class="categories__title-shield" src="{% static '/images/shield.png' %}">
+                {% endif %}
+              </h5>
+            </span>
+            <img class="categories__img" src="{% get_static_prefix %}images/{{ category.image_name }}.png">
+            <img class="categories__img categories__img--mobil" src="{% get_static_prefix %}images/{{ category.image_name }}-mobil.png">
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

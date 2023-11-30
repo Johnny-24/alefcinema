@@ -1,5 +1,3 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html lang="ru-RU">
 
@@ -13,29 +11,20 @@
 
     <!-- main -->
     <main class="main">
+      {% if request.resolver_match.url_name != 'home' %}
+        <!-- page header -->
+        {% include 'mainapp/includes/page_header.html' %}
+      {% endif %}
+
       {% block content %} {% endblock %}
+
+      <!-- form block -->
+      {% include 'mainapp/includes/form.html' %}
     </main>
 
-{% comment %}
-    <footer class="footer">
-      <div class="footer__container container">
-        <div class="footer__logo"><a class="logo logo--footer" href="/">
-            <svg class="icon icon-logo ">
-              <use xlink:href="assets/images/svg/symbol/sprite.svg#logo"></use>
-            </svg></a></div>
-        <nav class="footer-menu">
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__item"><a class="menu__link active" href="catalog.html">Каталог</a></li>
-              <li class="menu__item"><a class="menu__link" href="delivery.html">Доставка</a></li>
-              <li class="menu__item"><a class="menu__link" href="about.html">О компании</a></li>
-              <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
-            </ul>
-          </nav>
-        </nav>
-        <div class="footer__contacts">г. Екатеринбург,  ул. Монтажников, 26а<br>Все права защищены www.alefcinema.ru</div>
-      </div>
-    </footer> {% endcomment %}
+    <!-- footer -->
+    {% include 'mainapp/includes/footer.html' %}
+
 
 
     {% comment %} <nav class="mobile-menu">
@@ -185,8 +174,7 @@
     </div> {% endcomment %}
 
 
-    {% comment %} <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/libs.min.js"></script>
-    <script src="assets/js/main.js"></script> {% endcomment %}
+    <!-- scripts -->
+    {% include 'mainapp/includes/scripts.html' %}
   </body>
 </html>

@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+        <section class="section-about">
+        <div class="section-about__first-block">
+          <div class="section-about__row container">
+            <div class="section-about__col">
+              <div class="section-about__logo">
+                <svg class="icon icon-logo section-about__ico">
+                  <use xlink:href="assets/images/svg/symbol/sprite.svg#logo"></use>
+                </svg>
+              </div>
+              <div class="section-about__description">
+                <p>
+                  Компания начала свою деятельность в 2010 году, как поставщик запасных частей и расходных материалов для кинотеатров г. Екатеринбурга
+                  и Свердловской области. За годы успешной работы нам удалось наладить контакты с зарубежными производителями и поставщиками, значительно расширить клиентскую базу.
+                </p>
+              </div><b>Сегодня наша компания сотрудничает с кинотеатрами во многих регионах России от Европейской части России до Дальнего востока.</b>
+            </div>
+            <div class="section-about__col"><img class="section-about__first-img" src="assets/images/picture1.jpg"></div>
+          </div>
+        </div>
+        <div class="section-about__second-block">
+          <div class="section-about__row container">
+            <div class="section-about__col"><img class="section-about__second-img" src="assets/images/picture2.jpg"></div>
+            <div class="section-about__col"><img class="shield section-about__shield" src="assets/images/shld.svg">
+              <div class="section-about__description">
+                <p>
+                  Наша компания является официальным дисрибьютером компании
+                  “Yumex” в России.
+                </p>
+              </div>
+              <p>
+                Yumex inc основана 6 октября 1992 года. Штаб квартира расположена
+                в Японии, префектура Хёго, город Химедзи. В структуру Yumex inc входят подразделения, расположенные на территории Малайзии, Республике Кореи и КНР. Компания производит широкий спектр источников специального освещения для промышленности, медицины и индустрии развлечений.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container">
+          <div class="about__description">Работать с нами выгодно по нескольким причинам:</div>
+          <ul class="about__list">
+            <li class="about__item">
+              <h5 class="about__item-title">Низкие цены</h5>
+              <div class="about__item-description">
+                Импортируя продукцию напрямую
+                от производителей, мы всегда предлагаем самые низкие цены,
+                что позволяет кинотеатрам оптимизировать расходы
+                на обслуживание оборудования.
+              </div><img class="about__ico" src="assets/images/usd.svg">
+            </li>
+            <li class="about__item">
+              <h5 class="about__item-title">Оперативность</h5>
+              <div class="about__item-description">
+                На складе компании всегда
+                в наличии отражатели для самых распространенных моделей цифровых проекторов,
+                что позволяет в случае взрыва лампы оперативно заменить отражатель и лампу.
+              </div><img class="about__ico" src="assets/images/timer.svg">
+            </li>
+            <li class="about__item">
+              <h5 class="about__item-title">качество</h5>
+              <div class="about__item-description">
+                Наша компания является эксклюзивным импортером японской компании Юмекс
+                в России, которая предлагает ксеноновые лампы высочайшего качества.
+              </div><img class="about__ico" src="assets/images/lightning.svg">
+            </li>
+          </ul>
+        </div>
+      </section>
+{% endblock %}
